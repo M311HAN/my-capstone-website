@@ -1,0 +1,272 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #e63946;
+  text-decoration: none;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(230, 11, 47, 0.656);
+}
+a:hover {
+  color: #000000;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+.styled-table th, .styled-table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.styled-table th {
+  background-color: #f1faee;
+  font-weight: bold;
+}
+
+ol {
+  font-family: "Rampart One", sans-serif;
+  list-style: none;
+  padding-left: 4rem;
+  margin-bottom: 1.5rem;
+  padding-right: 4rem;
+}
+ol li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+ol li:before {
+  counter-increment: item;
+  content: counter(item);
+  background: rgb(141, 213, 237);
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: -1.75em;
+}
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+.back-to-top {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: rgba(46, 150, 63, 0.77);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem;
+  width: 50%;
+}
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #d1cece;
+}
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+.lahmacun-button {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(141, 213, 237);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.lahmacun-button:hover {
+  background-color: #7adc7b;
+}
+
+h1, h2,
+h3, h4, h5, h6 {
+  font-family: "Rampart One", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0 50px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.newsletter__header {
+  margin-bottom: 20px;
+}
+.newsletter .radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  background-image: url("meat-lahmacun-table.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 200px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 800px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.565) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar {
+  margin-top: 10px;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "roboto Mono", monospace;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  padding: 5px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 80px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 20px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.save-later {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px !important;
+  margin-bottom: 20px;
+}
+
+.save-later {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.save-later:hover {
+  background-color: #3e8e41;
+  padding: 15px 25px;
+}
+
+.like-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #de0909;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 500px;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.like-button:before {
+  content: "👍";
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", "Symbola";
+  margin-right: 5px;
+}
+.like-button:hover {
+  background-color: rgba(0, 255, 38, 0.6784313725);
+  padding: 15px 25px;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}/*# sourceMappingURL=my-recipe.css.map */

@@ -1,0 +1,69 @@
+<!-- DOCTYPE indicates to the browser which version of html to use.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Childhood</title>
+<!-- link href= my compiled scss which converts it to a .css file with my html file stylesheet--> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+    <link rel="stylesheet" href="childhood3.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans%7CRoboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a class="active" href="childhood3.html">Childhood</a>
+		<a href="my-recipe.html">Recipe</a>
+		<a href="saved-items.html">Saved Items</a>
+	</div>
+	  <!-- Inside the body: <h1> and <h2> tags used for the section headings & <p> tags used for paragraphs of text.-->
+	<h1>Hobbies</h1>
+	<button class="save-later" onclick="saveItem('<h2><p>My Hobbies</h2><p>Football & Drawing</p>','childhood3.html')">Save for later</button>
+
+	<h2>Football</h2>
+	<img src="https://i0.wp.com/thesefootballtimes.co/wp-content/uploads/2018/06/hagi.jpg?resize=1350%2C915&ssl=1" alt="Football image">
+	<button class="save-later" onclick="saveItem('<h2>Hagi footballer image</h2></p>','https:/i0.wp.com/thesefootballtimes.co/wp-content/uploads/2018/06/hagi.jpg?resize=1350%2C915&ssl=1')"
+	>Save image</button>
+	<button class="like-button" id="like-button-5">Like</button>
+
+<!-- hover-element class for jQuery effect-->
+	<p class="hover-element">I loved spending hours watching <b>football</b> and every weekend I would watch my favourite <b>football</b> team play with my dad.</p>
+	<p>I played for a <b>football</b> team called <em>Galatasaray</em>. On my 15th birthday, I scored 4 goals and took my team to the semi-finals.</p>
+	<h2>Drawing</h2>
+	<button class="like-button" id="like-button-6">Like</button>
+
+<!-- save button class "save-later" for scss style and onclick "saveItem" for javascript functions-->
+	<img src="https://cdn.thewirecutter.com/wp-content/uploads/2020/02/5cheapish-drawing-lowres-2x1-7321.jpg?auto=webp&quality=75&crop=2:1&width=1024&dpr=2" alt="Drawing image">
+	<button class="save-later" onclick="saveItem('<h2>Drawing image</h2></p>','https:/cdn.thewirecutter.com/wp-content/uploads/2020/02/5cheapish-drawing-lowres-2x1-7321.jpg?auto=webp&quality=75&crop=2:1&width=1024&dpr=2')"
+	>Save image</button>
+	<button class="like-button" id="like-button-7">Like</button>
+
+<!-- "hover-elemnt" when hovered over creates a jquery animation-->
+	<p class="hover-element">I spent most afternoons <b>drawing</b> my favourite cartoon characters and <b>drawing</b> my parents while they sat and watched TV.</p>
+	<p>My dad used to bring me <em>crayons</em> and <em>paper</em> every time he came home from work.</p>
+	<h1>Toys</h1>
+	<button class="save-later" onclick="saveItem('<h2><p>My Toys</h2><p>legos & Bicycle</p>','childhood3.html')">Save for later</button>
+
+	<img src="https://lh3.googleusercontent.com/-GkIwUZp4Sms/VZ_tFsfPRzI/AAAAAAAAEY4/VylXGw91Z50/s912-Ic42/IMG_2688.JPG" alt="LegosBike image">
+	<button class="save-later" onclick="saveItem('<h2>Lego Bike image</h2></p>','https:/lh3.googleusercontent.com/-GkIwUZp4Sms/VZ_tFsfPRzI/AAAAAAAAEY4/VylXGw91Z50/s912-Ic42/IMG_2688.JPG')"
+	>Save image</button>
+	<button class="like-button" id="like-button-8">Like</button>
+
+	<h2>Legos</h2>
+<!-- when hovered, it rotates the paragraph-->
+	<p class="hover-rotate">Playing with <b>legos</b> was my favourite activity. I always wanted to build the biggest and coolest creations like cars and tall buildings.</p>
+	<p>My parents bought me a new <b>Lego</b> set every birthday and my dad would help build projects with me.</p>
+	<h2>Bicycle</h2>
+<!-- size of the paragraph increases when hovered over-->
+	<p class="hover-scale">My <b>bicycle</b> was my new adventure and freedom. I would <b>ride</b> it around the neighbourhood with my friends, and we would all make our way to the <em>skatepark</em>.</p>
+	<p class="hover-scale">One day I fell off my <b>bike</b>, and my dad had to fix it for me. He told me that falling off will only make you better and better.</p>
+	<!-- 'childhood3.html' linked to save later button once user clicks it will send them to this webpage-->
+	<button class="save-later" onclick="saveItem('<h2> My childhood</h2><p>','childhood3.html')">Save page for later</button>
+<a href="saved-items.html">View Saved Items</a>
+<a class="top-button" href="#top">Back to top</a>
+<!-- linked js file at the bottom of html-->
+<script src="saved-items.js"></script>
+<script src="likeButton.js"></script>
+</body>
+</html>
+

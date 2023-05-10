@@ -1,0 +1,121 @@
+<!-- DOCTYPE indicates to the browser which version of html to use.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to my website</title> 
+<!-- link href= my compiled scss which converts it to a .css file with my html file stylesheet--> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navbar">
+		<a class="active" href="index.html">Home</a>
+		<a href="childhood3.html">Childhood</a>
+		<a href="my-recipe.html">Recipe</a>
+		<a href="saved-items.html">Saved Items</a>
+	</div>
+
+	<header>
+<!-- Inside the body: <h1> and <h2> tags used for the section headings & <p> tags used for paragraphs of text.-->
+		<div class="bounce_in_animation">Welcome to my website</div>
+	</header>
+	<main>
+		<section>
+			<h2>A bit about me</h2>
+			<button class="save-later" onclick="saveItem('<h2><p>A bit about me</h2>Hello! my name is Melihhan, I grew up in London, I am 26 years old and I speak three languages, English, </p>','index.html')">Save for later</button>
+			<button class="like-button" id="like-button-1">Like</button>
+
+			
+			  <button id="toggle-btn">Hide/Show</button>
+
+			<!-- created jQuery animation when user clicks the button it hides the paragraph -->
+			  <div id="hidden-element" class="hidden"><p>Hello! my name is Melihhan, I grew up in London, I am 26 years old and I speak three languages, English, 
+				Turkish and Portuguese. Me and my dad are huge fans of the Turkish football team Galatasaray! and we watch them play every weekend together.</p></div>
+            <p>In the year 2000 Galatasaray won the UEFA cup against arsenal in the final. For proof and more information on Galatasaray
+				<a href="https://en.wikipedia.org/wiki/Galatasaray_S.K._in_international_football" target="link-button" class="external-link">Here's a link</a>
+                just have a look at the amount of success and trophies they have won!</p>
+				<button class="save-later" onclick="saveItem('<h2>Galatasaray wiki</h2></p>','https:/en.wikipedia.org/wiki/Galatasaray_S.K._in_international_football')"
+					>Save link</button>
+
+				<img src="https://m.media-amazon.com/images/M/MV5BZjdhZTM2NDEtYmUyYi00OTBhLWE4ZmMtOGZjM2QwZmM4MDRjXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg" alt="UEFA winners image">
+			<button class="save-later" onclick="saveItem('<h2>UEFA winners image</h2></p>','https:/m.media-amazon.com/images/M/MV5BZjdhZTM2NDEtYmUyYi00OTBhLWE4ZmMtOGZjM2QwZmM4MDRjXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg')"
+				>Save image</button>
+		</section>
+    
+<!-- ul to create an unordered list and h2 for the heading of the list-->
+        <button id="dropdown-btn">⬇ Dropdown menu ⬇</button> 
+        <section>
+			<h2>My favourite recipes</h2>
+            <ul id="dropdown-menu" class="hidden">
+				<li>Lahmacun</li>
+				<li>Baklava</li>
+				<li>Çiğ köfte</li>
+			</ul>
+<!-- img tag used to insert the images & src attribute specifies the location of the image file.-->
+            <p class="hover-element">These are just some of my favourite traditional turkish dishes, food that i have eaten and enjoyed from when i was little and still do too this day!  </p>
+			<img src="https://images.deliveryhero.io/image/fd-tr/LH/sqfp-hero.jpg" alt="Lahmacun image">
+			<button class="save-later" onclick="saveItem('<h2>Lahmacun image</h2></p>','https:/images.deliveryhero.io/image/fd-tr/LH/sqfp-hero.jpg')"
+				>Save image</button>
+				<button class="like-button" id="like-button-2">Like</button>
+
+				  
+				  
+<!-- save button class "save-later" for scss style and onclick "saveItem" for javascript functions-->
+
+            <img src="https://cleobuttera.com/wp-content/uploads/2018/03/lifted-baklava.jpg" alt="baklava image">
+			<button class="save-later" onclick="saveItem('<h2>Baklava image</h2></p>','https:/cleobuttera.com/wp-content/uploads/2018/03/lifted-baklava.jpg')"
+				>Save image</button>
+				<button class="like-button" id="like-button-3">Like</button>
+
+				  
+
+            <img src="https://www.giverecipe.com/wp-content/uploads/2011/11/cigkofte-as-a-finger-food.jpg" alt="cig kofte image">
+			<button class="like-button" id="like-button-4">Like</button>
+
+			  
+			<button class="save-later" onclick="saveItem('<h2>Cig Kofte image</h2></p>','https:/www.giverecipe.com/wp-content/uploads/2011/11/cigkofte-as-a-finger-food.jpg')"
+				>Save image</button>
+
+<!-- created a contact form and comments form, used id's for scss styling-->
+				<div class="forms-container">
+				  <form id="contact-form">
+					<h3>Contact Me: i would love to hear about you!</h3>
+					<label for="contact-name">Name:</label>
+					<input type="text" id="contact-name" name="contact-name" required>
+					
+					<label for="contact-email">Email:</label>
+					<input type="email" id="contact-email" name="contact-email" required>
+					
+					<label for="contact-message">Message:</label>
+					<textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+					
+					<button type="submit">Send Message</button>
+				  </form>
+				  <form id="comments-form">
+					<h3>Leave a comment</h3>
+					<label for="comment-name">Name:</label>
+					<input type="text" id="comment-name" name="comment-name" required>
+					
+					<label for="comment">Comment:</label>
+					<textarea id="comment" name="comment" rows="4" required></textarea>
+					
+					<button type="submit">Submit</button>
+				  </form>
+				</div>  
+		</section>
+
+		  
+	</main>
+	<button class="last-save-later" onclick="saveItem('<h2>Welcome to my website</h2><p>','index.html')">Save page for later</button>
+
+<!-- <a> tag used for the link & href attribute specifies the location of the anchor(the top of the page).-->   
+
+	<a href="saved-items.html">View Saved Items</a>
+	<a href="#top" class="back-to-top">Back to top</a>
+	<!-- linked js file at the bottom of html-->
+	<script src="saved-items.js"></script>
+	<script src="likeButton.js"></script>
+</body>
+</html>

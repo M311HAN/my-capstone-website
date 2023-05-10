@@ -1,0 +1,160 @@
+@charset "UTF-8";
+body {
+  background-color: #caebf2;
+  color: #001f3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body h1::after,
+body h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 800px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.565) 50%, rgba(255, 255, 255, 0) 100%);
+}
+body h1,
+body h2 {
+  width: 800px;
+  max-width: 100%;
+}
+body h1,
+body h2 {
+  font-size: 36px;
+  font-family: "roboto Mono", monospace;
+  text-align: center;
+  padding: 20px;
+}
+body h1 {
+  padding-top: 50px;
+}
+body h2 {
+  padding-top: 20px;
+}
+body img {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.234);
+  transition: all ease-in-out 0.2s;
+  height: 350px;
+  width: 450px;
+  margin: 40px 0;
+}
+body img:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 4, 7, 0.343);
+}
+body p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20 auto;
+  max-width: 800px;
+}
+body a {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(230, 11, 47, 0.656);
+  width: 200px;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 16px;
+}
+body a:hover {
+  color: #000000;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: "roboto Mono", monospace;
+  margin-bottom: 50px;
+  border-radius: 14px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.top-button {
+  color: #f3f3f3;
+  background-color: rgba(46, 150, 63, 0.77);
+}
+
+.save-later {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.save-later {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.save-later:hover {
+  background-color: #3e8e41;
+  padding: 15px 25px;
+}
+
+.like-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #de0909;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 500px;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.like-button:before {
+  content: "👍";
+  font-family: "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", "Symbola";
+  margin-right: 5px;
+}
+.like-button:hover {
+  background-color: rgba(0, 255, 38, 0.6784313725);
+  padding: 15px 25px;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.hover-rotate {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}/*# sourceMappingURL=childhood3.css.map */

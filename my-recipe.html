@@ -1,0 +1,170 @@
+<!-- DOCTYPE indicates to the browser which version of html to use.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Lahmacun Recipe</title>
+	
+<!-- link href= my compiled scss which converts it to a .css file with my html file stylesheet--> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <link rel="stylesheet" href="my-recipe.css">
+<!-- link some cool google fonts for my webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Noto+Sans&display=swap" rel="stylesheet">
+
+<!-- Inside the body: <h1> and <h2> tags used for the section headings & <p> tags used for paragraphs of text.-->
+</head>
+<body>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="childhood3.html">Childhood</a>
+    <a class="active" href="my-recipe.html">Recipe</a>
+	<a href="saved-items.html">Saved Items</a>
+</div>
+<h1>This is my recipe for making Turkish lahmacun</h1>
+	<h2>What is lahmacun?</h2>
+	<!-- save button class "save-later" for scss style and onclick "saveItem" for javascript functions-->
+	<button class="save-later" button onclick="saveItem('<h2>What is Lahmacun?</h2></p>', 'my-recipe.html')">Save for later</button>
+	<button class="like-button" id="like-button-9">Like</button>
+
+
+	 
+	  
+	  <div id="chained-element"><p>Lahmacun is a hand made Turkish crispy flat bread with meat. It is sometimes referred to as Turkish pizza except lahmacun is much thinner than even the thinnest of Italian pizzas and it never has cheese on it.</p>
+	<p>Growing up lahmacun was always my favourite food and I always got excited when my mum would bake me some when I arrived from school and still to this day I always request for my mother to bake it!</p>
+	<p>For more detailed information on lahmacun you can click this button below.</p></div>
+	<a href="https://vidarbergum.com/recipe/turkish-lahmacun-crispy-flatbread-with-meat/" target="link-button" class="lahmacun-button">Lahmacun in detail</a>
+<!-- tr and td to create a table with columns and rows-->
+	<h2>Ingredients and Measurements for 6-8 Lahmacun</h2>
+	<button class="save-later" button onclick="saveItem('<h2>Ingredients and Measurements table</h2></p>','my-recipe.html')">Save for later</button>
+	<button class="like-button" id="like-button-10">Like</button>
+
+	<table class="styled-table">
+		<thead>
+			<tr>
+				<th>Ingredients</th>
+				<th>Measurements</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Strong white bread flour</td>
+				<td>250g</td>
+			</tr>
+			<tr>
+				<td>Sugar</td>
+				<td>1/2 tsp</td>
+			</tr>
+			<tr>
+				<td>Fast-action dried yeast</td>
+				<td>3g</td>
+			</tr>
+			<tr>
+				<td>Fresh yeast</td>
+				<td>12g</td>
+			</tr>
+			<tr>
+				<td>Water</td>
+				<td>160 ml</td>
+			</tr>
+			<tr>
+				<td>Salt</td>
+				<td>5g</td>
+			</tr>
+			<tr>
+				<td>Olive oil</td>
+				<td>1/2 Tbsp</td>
+			</tr>
+			<tr>
+				<td>Tomatoes</td>
+				<td>250g</td>
+			</tr>
+			<tr>
+				<td>Onion</td>
+				<td>75g</td>
+			</tr>
+			<tr>
+				<td>Garlic peeled</td>
+				<td>2 cloves</td>
+			</tr>
+			<tr>
+				<td>Parsley</td>
+				<td>30g</td>
+			</tr>
+			<tr>
+				<td>Ground beef</td>
+				<td>200g</td>
+			</tr>
+			<tr>
+				<td>Turkish hot red pepper paste</td>
+				<td>1 Tbsp</td>
+			</tr>
+			<tr>
+				<td>Tomato paste</td>
+				<td>1 Tbsp</td>
+			</tr>
+			<tr>
+				<td>Black pepper</td>
+				<td>1/4 tsp</td>
+			</tr>
+		</tbody>
+	</table>
+<!-- ol to create an ordered list and h2 for the heading of the list-->
+	<h2>Instructions</h2>
+	<button class="save-later" button onclick="saveItem('<h2>Lahmacun Instructions</h2></p>', 'my-recipe.html')">Save for later</button>
+	<button class="like-button" id="like-button-11">Like</button>
+
+	<ol>
+		<li>160 g of the flour should be combined with the yeast, sugar, and water to make a moist dough. For 1-2 hours, cover and allow to double in size.</li>
+		<li>Salt, olive oil, and the remaining flour should all be added. Knead the dough on medium to high speed in a kitchen appliance until it is elastic and smooth. It often takes 5 to 10 minutes, although this can vary greatly. Ensure that the temperature of your dough doesn't rise over that of your body; if it does, cover it and store it in the refrigerator for 10 to 15 minutes before continuing. The dough is prepared when it can be stretched between your fingers almost transparently without breaking. Cover and wait for about an hour for the size to double.</li>
+		<li>Turn the heat all the way up in your oven (mine goes to 300 C/570 F), then place a pizza stone or baking stone high up. Depending on the material, pizza stones and baking stones might take anywhere from 10 to 45 minutes to warm up. Just preheat the oven to its highest setting if you don't have one.</li>
+		<li>After the dough has doubled in size, tip onto a floured surface. Cut into 6–8 pieces of similar sizes. Stretch the edges of each piece repeatedly towards the centre until the surface is firm and smooth, then roll each piece into a ball. Let the balls to rise one last time while being covered and placed seam-side down, for 15-20 minutes.</li>
+		<li>Create the topping in the meanwhile. The tomato's wet core should be thrown away. Mix the tomatoes, onion, garlic, and flat-leaf parsley after being chopped to a very fine consistency. For this, I utilise a kitchen appliance. Drain some of the liquid if the mixture appears to be extremely wet. Mixture, minced meat, red pepper paste, tomato paste, salt, and pepper should all be placed in a bowl with the mixture.</li>
+		<li>Each piece of dough is rolled out into a very thin disc. Put it on a pizza peel covered in flour. If you find it more convenient, you could also put it on baking parchment. Apply a thin layer of the topping mixture with your fingertips to cover the entire flatbread pretty evenly. If there are some areas with very little topping, don't be concerned. To expect this from Lahmacun!</li>
+		<li>Depending on the heat of your oven and whether you're using a pizza stone or a baking stone, bake one or two lahmacun at a time until the edges are crispy and brown, around 3 to 8 minutes. If you don't have one, bake for 2-4 minutes on a standard baking sheet at the bottom of the oven. After that, place it to the top of the oven for the final 2-3 minutes of cooking.</li>
+		<li>Serve right away with your preferred dipping sauces.</li>
+	</ol>
+	
+    <h2>Testimonial</h2>
+	<button class="save-later" button onclick="saveItem('<h2>Lahmacun recipe testimonial</h2></p>', 'my-recipe.html')">Save for later</button>
+	<button class="like-button" id="like-button-12">Like</button>
+
+<p>Nathalie says:</p>
+<p>13 March 2022 at 20:22</p>
+<p>Love love love your Lahmacun recipe 😍 so close to the authentic one! I make them once weekly and take leftovers for lunch to work the following day. They are still delicious even after 1 day!</p>
+
+<!-- used input and label to create a form button and radio button which a user can interact with -->
+    <div class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2> 
+    <p>What types of recipes would you like to receive?</p>
+    </div>	
+	<label>
+      <input type="radio" name="recipe-type" value="Turkish starters">
+      Turkish starters
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="recipe-type" value="Turkish main meals">
+      Turkish main meals 
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="recipe-type" value="Turkish Deserts">
+      Turkish Deserts
+    </label>
+    <br><br>
+    <div class="form-group">
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email" placeholder="Enter your email address">
+		  <button type="submit">Subscribe</button>
+	  </div>
+	  <button class="save-later" onclick="saveItem('<h2>My Lahmacun Recipe</h2><p>A delicious Lahmacun recipe.</p>','my-recipe.html')">Save page for later</button>
+      <a href="saved-items.html">View Saved Items</a>
+
+   <!-- <a> tag used for the link & href attribute specifies the location of the anchor(the top of the page).-->    
+      <a href="#top" class="back-to-top">Back to top</a>
+	  	<!-- linked js file at the bottom of html-->
+	  <script src="saved-items.js"></script>
+	  <script src="likeButton.js"></script>
+</body>
+</html>

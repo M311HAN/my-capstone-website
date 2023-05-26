@@ -18,10 +18,10 @@ Follow the steps below to install, configure, and get the project running locall
 # Open a terminal
 
 # Clone the repository by typing:
-git clone https://github.com/M311HAN/capstone-personal-site.git
+git clone https://github.com/M311HAN/my-capstone-website.git
 
 # Navigate into the cloned directory with:
-cd capstone-personal-site
+cd my-capstone-website
 
 # Open with live server (you need to have Live Server extension installed on your code editor) If you are not using VS Code or don't have the "Live Server" extension, you can simply open the index.html file with any web browser to view the website.
 ```
